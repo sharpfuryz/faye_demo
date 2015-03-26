@@ -1,0 +1,35 @@
+body{
+  width: 960px;
+  margin: 100px auto;
+}
+#container{
+  width: 940px;
+}
+.item{
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  margin: 10px;
+  display: block;
+  overflow: hidden;
+  float: left;
+  border: 1px solid #333;
+  &.booked{
+    background-color: darkolivegreen;
+  }
+  &.locked{
+    background-color: gold;
+  }
+  &.hover{
+    cursor: pointer;
+    background-color: #e6d980;
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+  }
+  &:after{
+    clear: both;
+  }
+}

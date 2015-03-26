@@ -1,0 +1,2 @@
+== README
+Demo case of faye usage: online UI block example

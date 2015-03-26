@@ -1,0 +1,4 @@
+%h1 Dashboard
+#container
+  - @items.each do |item|
+    .item{id: "item__#{item.id}", class: ('booked' if item.booked?)}= item.name
